@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import NavigationLinks from '../components/navigation-links'
 import './home.css'
 
 const Home = (props) => {
@@ -28,7 +27,7 @@ const Home = (props) => {
           </a>
           <div className="home-nav">
             <nav className="home-nav1">
-              <a href="#Overview" className="home-link1">
+              <a href="#Overview" className="home-link01">
                 Overview
                 <span
                   dangerouslySetInnerHTML={{
@@ -36,13 +35,13 @@ const Home = (props) => {
                   }}
                 />
               </a>
-              <a href="#process" className="home-link2 Navigation-Link">
+              <a href="#process" className="home-link02 Navigation-Link">
                 Process
               </a>
-              <a href="#Lore" className="home-link3">
+              <a href="#Lore" className="home-link03">
                 Lore
               </a>
-              <a href="#Postions" className="home-link4">
+              <a href="#Postions" className="home-link04">
                 Positions
               </a>
             </nav>
@@ -52,10 +51,16 @@ const Home = (props) => {
               <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
             </svg>
           </div>
-          <div data-role="MobileMenu" className="mobile-menu">
+          <div data-role="MobileMenu" className="mobile-menu home-mobile-menu">
+            <a href="#top">
+              <img
+                alt="image"
+                src="/Logos/futlol-400h.png"
+                className="home-image001"
+              />
+            </a>
             <div className="home-nav2">
               <div className="home-container01">
-                <img alt="image" src="/Logos/logo1-1500h.png" />
                 <div
                   data-role="CloseMobileMenu"
                   className="home-close-mobile-menu"
@@ -65,10 +70,20 @@ const Home = (props) => {
                   </svg>
                 </div>
               </div>
-              <NavigationLinks rootClassName="navigation-links-root-class-name9"></NavigationLinks>
-              <button className="button-secondary button button-md">
-                Get in touch
-              </button>
+              <nav className="home-nav3">
+                <a href="#Overview" className="home-link06 Navigation-Link">
+                  Overview
+                </a>
+                <a href="#process" className="home-link07 Navigation-Link">
+                  Process
+                </a>
+                <a href="#Lore" className="home-link08 Navigation-Link">
+                  Lore
+                </a>
+                <a href="#Postions" className="home-link09 Navigation-Link">
+                  Positions
+                </a>
+              </nav>
             </div>
           </div>
         </div>
